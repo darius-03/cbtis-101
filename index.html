@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CBTIS 101</title>
+  <style>
+        body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #800020; /* Color vino */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #a52a2a; /* Guinda más claro */
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav button {
+      background-color: white;
+      border: none;
+      margin: 5px;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #800020;
+    }
+
+    nav button:hover {
+      background-color: #f5e5e5;
+    }
+
+    section {
+      display: none;
+      padding: 20px;
+      background-color: white;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #800020;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    .carrera-btn {
+      background-color: #eee;
+      border: 1px solid #ccc;
+      padding: 8px;
+      margin: 5px 0;
+      border-radius: 4px;
+      cursor: pointer;
+      color: #800020;
+    }
+
+    .carrera-btn:hover {
+      background-color: #f0dada;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CBTIS 101</h1>
+    <p>Centro de Bachillerato Tecnológico Industrial y de Servicios</p>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSeccion('inicio')">🏠 Inicio</button>
+    <button onclick="mostrarSeccion('uacs')">📚 UAC’s</button>
+    <button onclick="mostrarSeccion('carreras')">🎓 Carreras</button>
+    <button onclick="mostrarSeccion('contacto')">📞 Contacto</button>
+  </nav>
+
+  <!-- INICIO -->
+  <section id="inicio" class="active">
+    <h2>🏫 Bienvenidos</h2>
+    <p>Bienvenidos al <strong>CBTIS 101</strong>, un <strong>Centro de Bachillerato Tecnológico Industrial y de Servicios</strong> comprometido con la formación académica y técnica de sus estudiantes.</p> 
+
+
+     <p>El CBTIS 101 es una institución de educación media superior ubicada en Motzoronto Ver. Ofrece formación integral a jóvenes, combinando la educación académica con capacitación técnica en diversas especialidades. Nuestro compromiso es preparar a los estudiantes para enfrentar con éxito los retos del mundo laboral o continuar con estudios superiores.</p> 
+
+
+    <img src="imagen1.jpg">
+
+
+   <p>¡Transforma tu vida en el CBTIS 101! Aquí encontrarás el camino hacia un futuro brillante y lleno de oportunidades. Nuestros programas técnicos te darán las herramientas para destacarte en el mundo laboral y alcanzar tus metas. ¡Únete a nuestra comunidad y comienza a construir el éxito que siempre has soñado! En el CBTIS 101, ¡tú puedes ser el protagonista de tu propia historia!</p>
+
+  </section>
+
+  <!-- UACS -->
+  <section id="uacs">
+    <h2>📚 Unidades de Aprendizaje (UAC’s)</h2>
+    <ul>
+      <li>Pensamiento matematico</li>
+      <li>Quimica</li>
+      <li>Inglés</li>
+      <li>Lengua Y Comunicación</li>
+      <li>Ciencias Sociales</li> 
+      <li>Cultura Digital</li> 
+      <li>Humanidades</li> 
+      <li>Recursos Socioemocionales</li> 
+    </ul>
+  </section>
+
+  <!-- CARRERAS -->
+  <section id="carreras">
+    <h2>🎓 Carreras Ofertadas</h2>
+    <p>Hax click en la carrera técnica que más llame tu atención para proporcionarte más información:</p>
+    <div>
+      <div class="carrera-btn" onclick="mostrarSeccion('analisis')">🧪 Laboratorísta Clínico</div>
+      <div class="carrera-btn" onclick="mostrarSeccion('alimentos')">🍲 Producción Industrial De Alimentos</div>
+      <div class="carrera-btn" onclick="mostrarSeccion('contaduria')">📊 Contabilidad</div>
+      <div class="carrera-btn" onclick="mostrarSeccion('mecanica')">⚙️ Mecánica Industrial</div>
+    </div>
+  </section>
+
+  <!-- CADA CARRERA -->
+  <section id="analisis">
+    <h2>🧪 Laboratorísta Clínico</h2>
+
+  <p>
+    ¿Te interesa la ciencia, la salud y el trabajo de laboratorio? La especialidad de Laboratorista Clínico en el CBTIS 101 es una excelente opción para quienes desean formarse como profesionales técnicos capacitados en el análisis de muestras biológicas.
+  </p>
+
+  <img src="Analisis1.jpg" alt="Estudiantes Usando Microscopios" style="width: 300px; border-radius: 10px; margin-bottom: 15px;">
+
+  <p>
+    A lo largo de la carrera, desarrollarás habilidades en la toma y procesamiento de muestras de sangre, orina y otros fluidos corporales. Aprenderás a utilizar equipos especializados como microscopios, centrífugas y espectrofotómetros, además de aplicar técnicas de microbiología, hematología e inmunología, siempre siguiendo estrictas normas de bioseguridad.
+  </p>
+
+  <img src="Analisis2.jpg" alt="Muestras" style="width: 300px; border-radius: 10px; margin-bottom: 15px;">
+
+  <p>
+    💉 Toma muestras.
+    🔬 Observa lo invisible.
+    😷 Y sí, usarás guantes, bata, cubrebocas… 
+
+    Como egresado o egresada, estarás preparado(a) para trabajar en hospitales, laboratorios clínicos, clínicas, centros de salud y bancos de sangre, aportando información clave para el diagnóstico médico.
+
+
+
+
+    Estudia Laboratorista Clínico en el CBTIS 101 y prepárate para una carrera técnica con ciencia, precisión y vocación de servicio.
+  </p>
+</section>
+
+
+  <section id="alimentos">
+    <h2>🍲 Producción Industrial De Alimentos</h2>
+ 
+  <p>
+    Si te apasiona la ciencia, los procesos de transformación y la calidad de los alimentos que consumimos, la especialidad técnica de Producción Industrial de Alimentos es ideal para ti.
+  </p>
+
+  <img src="Alimentos1.jpg" alt="Estudiantes" style="width: 300px; border-radius: 10px; margin-bottom: 15px;">
+
+  <p>
+    En esta carrera aprenderás a diseñar, controlar y mejorar procesos para la elaboración de productos alimenticios, desde su procesamiento hasta su conservación, envasado y almacenamiento. Se te capacitará en el manejo de maquinaria especializada, normativas de higiene y seguridad, control de calidad, análisis microbiológicos y técnicas de producción en la industria alimentaria.
+  </p>
+
+  <img src="Alimentos2.jpg" alt="..." style="width: 300px; border-radius: 10px; margin-bottom: 15px;">
+
+  <p>
+    Los egresados de esta especialidad están preparados para trabajar en empresas procesadoras de alimentos, laboratorios de control de calidad, industrias de conservación y transformación, así como emprender sus propios proyectos productivos.
+
+    Estudia Producción Industrial de Alimentos en el CBTIS 101 y forma parte del equipo que garantiza alimentos seguros, nutritivos y de calidad para todos.
+  </p>
+</section>
+
+
+  <section id="Contabilidad">
+    <h2>📊 Contabilidad</h2>
+
+  <p>
+    ¿Te gustan los números, el orden y la administración? La especialidad técnica de Contabilidad en el CBTIS 101 te ofrece una formación sólida y práctica en el manejo financiero de empresas y organizaciones.
+  </p>
+
+  <img src="imagen1.jpg" alt="" style="width: 300px; border-radius: 10px; margin-bottom: 15px;">
+
+  <p>
+    En esta carrera aprenderás a registrar, clasificar e interpretar operaciones contables, elaborar estados financieros, calcular impuestos, controlar inventarios y apoyar en la toma de decisiones económicas. También conocerás las leyes fiscales, el uso de software contable y las herramientas administrativas necesarias para el buen funcionamiento de cualquier negocio.
+  </p>
+
+  <img src="imagen2.jpg" alt="" style="width: 300px; border-radius: 10px; margin-bottom: 15px;">
+
+  <p>
+    Al egresar, están preparados para incorporarse al sector productivo o continuar estudios superiores en áreas como ingeniería mecánica, mantenimiento industrial y robótica. 
+    Como egresado o egresada podrás trabajar en despachos contables, empresas privadas, instituciones públicas o emprender tu propio servicio de asesoría fiscal y financiera.
+
+    Estudia Contabilidad y conviértete en la pieza clave que da orden, control y rumbo a las finanzas del mundo empresarial.
+  </p>
+</section>
+    
+  </section>
+
+  <section id="mecanica">
+    <h2>⚙️ Mecánica Industrial</h2>
+    <p>Capacítate en diseño mecánico, mantenimiento de maquinaria, soldadura, CNC y automatización industrial.</p>
+
+  <p>
+    ¿Te interesa saber cómo funcionan las máquinas, reparar equipos y entender los sistemas que mueven al mundo industrial? La especialidad de Mecánica Industrial en el CEBETIS te prepara para convertirte en un técnico altamente capacitado en el diseño, mantenimiento y operación de maquinaria industrial.
+  </p>
+
+  <img src="mecanica1.jpg" alt="Estudiantes trabajando en maquinaria" style="width: 300px; border-radius: 10px; margin-bottom: 15px;">
+
+  <p>
+    Durante tu formación aprenderás a interpretar planos mecánicos, utilizar herramientas y equipos de precisión, manejar torno, fresadora, soldadura y otros procesos fundamentales para la fabricación y reparación de piezas y sistemas mecánicos. Además, recibirás capacitación en normas de seguridad, control de calidad y prevención de riesgos laborales.
+
+    Los egresados de esta especialidad pueden desempeñarse en industrias manufactureras, metalmecánicas, automotrices, mineras, de mantenimiento, así como en talleres o emprendimientos propios.
+  </p>
+
+  <img src="mecanica2.jpg" alt="Taller de Mecánica CBTIS 101" style="width: 300px; border-radius: 10px; margin-bottom: 15px;">
+
+  <p>
+    Estudia Mecánica Industrial y conviértete en el especialista que mantiene en marcha la tecnología del presente y del futuro.
+  </p>
+</section>
+
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>📞 Contacto</h2>
+    <p>Puedes comunicarte con el <strong>CBTIS 101</strong> a través de los siguientes medios:</p>
+    <ul>
+      <li>📍 Dirección: Km. 1 Carretera Motzorongo-Tezonapa</li>
+      <li>📧 Correo: <a href="mailto:cbtis101.dir@dgti.sems.gob.mx">cbtis101.dir@dgti.sems.gob.mx</a></li>
+      <li>📞 Teléfono: (278) 736-3286</li>
+      <li>🌐 Facebook: <a href=https://www.facebook.com/share/1EYtfq5PXC/?mibextid=wwXIfr target="_blank">Visita nuestra página de Facebook</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 CBTIS 101 - Centro de Bachillerato Tecnológico Industrial y de Servicios</p>
+    <p>Página hecha por: Darrelle Rivera, Suri Cruz, Lázaro Eslava</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll("section");
+      secciones.forEach(sec => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+      window.scrollTo(0, 0);
+    }
+  </script>
+
+</body>
+</html>
+
+  
