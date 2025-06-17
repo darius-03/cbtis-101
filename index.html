@@ -82,20 +82,43 @@
     .carrera-btn:hover {
       background-color: #f0dada;
     }
+
+    .encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #800020; /* rojo oscuro */
+    padding: 10px;
+    color: white;
+    position: relative;
+  }
+
+    .logo-izquierdo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  
+  }
+    .titulo-centro {
+    text-align: center;
+    }
+
     
   </style>
 </head>
 <body>
 
-  <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 30px; background-color: #8b0000; color: white;">
-  <div style="display: flex; align-items: center;">
-    <img src="logocbtis.jpg" alt="logocbtis" style="height: 60px; margin-right: 15px;">
-    <div>
-      <h1 style="margin: 0;">CBTIS 101</h1>
-      <p style="margin: 0;">Centro de Bachillerato Tecnológico Industrial y de Servicios</p>
-    </div>
+  <header class="encabezado">
+  <div class="logo-izquierdo">
+    <img src="logocbtis.jpg" alt="logocbtis" style="height: 60px;">
   </div>
-  </header>
+
+  <div class="titulo-centro">
+    <h1>CBTIS 101</h1>
+    <p>Centro de Bachillerato Tecnológico Industrial y de Servicios</p>
+  </div>
+</header>
+
 
   <nav>
     <button onclick="mostrarSeccion('inicio')">🏠 Inicio</button>
